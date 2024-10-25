@@ -1,4 +1,7 @@
 import turtle as tr # tortu
+import time as t
+
+delay = 0.1
 
 #setup the screen
 wn = tr.Screen()
@@ -13,10 +16,32 @@ head.speed(0)
 head.shape("square")
 head.color("black")
 head.goto(0,0)
-head.direction = "stop"
+head.direction = "right"
+
+# function
+def move():
+    if head.direction == "up":
+        y = head.ycor()
+        head.sety(y + 20)
+
+    if head.direction == "down":
+        y = head.ycor()
+        head.sety(y - 20)
+
+    if head.direction == "right":
+        x = head.xcor()
+        head.setx(x + 20)
+    
+    if head.direction == "left":
+        x = head.xcor()
+        head.sety(x - 20)
 
 # Main game loop
 while True:
     wn.update()
+
+    move()
+
+    t.sleep(delay)
 
 wn.mainloop()
