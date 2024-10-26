@@ -9,8 +9,12 @@ for i in range(4):
     tr.forward(c)
 
     t.sleep(delay)
-    print(f"left 90")
-    tr.left(90)
+
+    # diminuer l'actio
+    if i != 3:
+        print(f"left 90")
+        tr.left(90)
+    else: pass
 
     t.sleep(delay)
 
