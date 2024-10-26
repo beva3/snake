@@ -19,5 +19,17 @@ tr.down()           # pen DOWN
 t.sleep(delay)
 tr.forward(100)
 
+# stamp the turtle shape
+tr.stamp()  # turtlr : head of pen
+
+# set the position by using setpos()
+tr.up()             # pen UP
+tr.setpos(-50,-50)
+tr.down()           # pen DOWN
+
+# forward turtle by 100
+t.sleep(delay)
+tr.forward(100)
+
 # exit on click
 tr.exitonclick()
