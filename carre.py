@@ -15,3 +15,5 @@ for i in range(4):
     t.sleep(delay)
 
 tr.exitonclick()
+
+# tsy atao itsony action left() @ farany
